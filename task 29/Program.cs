@@ -11,7 +11,6 @@ num = Convert.ToInt32(Console.ReadLine());
          for (int i = 0; i < num; i++)
             {
                 array[i] = new Random().Next(num+1);
-                Console.Write(array[i] + ", ");
             }
-            Console.WriteLine();
+            Console.WriteLine($"[{String.Join(", ", array)}]");;
 
